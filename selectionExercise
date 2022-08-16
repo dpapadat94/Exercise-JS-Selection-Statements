@@ -1,0 +1,102 @@
+//EXERCISE 1 CODE
+let answer = prompt("what is your name?");
+console.log("hello, " + answer);
+
+let favNumber = 99;
+
+let guess = prompt("can you guess my favortire number?");
+
+if (guess > favNumber) {
+  alert("too high");
+} else if (guess < favNumber) {
+  alert("too low");
+} else {
+  alert("congradulations");
+}
+
+//EXERSISE 2 CODE//
+let birthMonth = prompt("what is your birth month?");
+
+switch (birthMonth.toLocaleLowerCase()) {
+  case "january":
+  case "febuary":
+  case "march":
+  case "december":
+    alert("you were born in Winter");
+    break;
+  case "april":
+  case "may":
+  case "march":
+    alert("you were born in Spring");
+    break;
+  case "june":
+  case "july":
+  case "august":
+    alert("you were born in Summer");
+    break;
+  case "september":
+  case "october":
+  case "november":
+    alert("you were born in fall");
+    break;
+}
+//EXERCISE 3 CODE
+let typeId = "01";
+let colorId = "PU";
+let sizeId = "L";
+
+let type = "";
+let color = "";
+let size = "";
+
+switch (typeId) {
+  case "01":
+    type = "tank top";
+    break;
+  case "02":
+    type = "T-shirt";
+    break;
+  case "03":
+    type = "Long Sleeve";
+    break;
+  case "04":
+    type = "Sweat Shirt";
+    break;
+  default:
+    type = "other";
+}
+
+switch (colorId) {
+  case "BL":
+    color = "Black";
+    break;
+  case "BU":
+    color = "Blue";
+    break;
+  case "RD":
+    color = "Red";
+    break;
+  case "PU":
+    color = "Purple";
+    break;
+  default:
+    color = "other";
+}
+
+switch (sizeId) {
+  case "S":
+    size = "Small";
+    break;
+  case "M":
+    size = "Medium";
+    break;
+  case "L":
+    size = "Large";
+    break;
+  case "XL":
+    size = "Extra Large";
+    break;
+  default:
+    size = "One Size Fits All";
+}
+console.log(`product: ${size} ${color} ${type}`);
